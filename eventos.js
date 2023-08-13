@@ -9,4 +9,8 @@ div.appendChild(btn);
 div.addEventListener("click", function(){
 alert("Hola! Soy el Div.")
 
+btn.addEventListener("click", function(event){
+    event.stopPropagation()
+})
+
 })
